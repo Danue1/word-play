@@ -1,0 +1,19 @@
+#Root {
+  display: flex;
+  flex-direction: column;
+
+  #Header {
+  }
+
+  #Container {
+    display: flex;
+
+    #SideBar {
+      width: $width-sidebar;
+    }
+
+    #Content {
+      flex: 1;
+    }
+  }
+}

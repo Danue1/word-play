@@ -1,0 +1,9 @@
+.Primary {
+  background-color: $color-blue;
+
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover {
+    background-color: lighten($color-blue, 10%);
+  }
+}

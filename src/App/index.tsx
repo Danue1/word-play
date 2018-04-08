@@ -1,11 +1,14 @@
 import * as React from 'react'
+import { BrowserRouter } from 'react-router-dom'
 
-import './index.scss'
-import { Layout } from './Layout'
+import './Style/_index.scss'
+import { Template } from './Template'
 import { Page } from './Page'
 
 export const App: React.SFC = () => (
-  <Layout>
-    <Page />
-  </Layout>
+  <BrowserRouter>
+    <Template>
+      <Page />
+    </Template>
+  </BrowserRouter>
 )
