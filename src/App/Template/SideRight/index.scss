@@ -1,0 +1,9 @@
+@import '../../Style/variable';
+
+#Side.Right {
+  border-left: 1px solid $color-border;
+
+  #GuestList {
+    padding: 0.5rem 1rem;
+  }
+}

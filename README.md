@@ -1,11 +1,8 @@
-# wafflet
-
-# preview
-https://wafflet.github.io/wafflet/build/index.html
+# word-play
 
 ## stack
 
-- typescript v2.7
+- typescript v2.8
 - react v16
 - react-redux
 - react-router-dom

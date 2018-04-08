@@ -1,10 +1,9 @@
 import * as React from 'react'
 
 import './index.scss'
+import { Layout } from '@/App/Base'
 
-const Layout: React.SFC =
+export const Content: React.SFC =
   ({ children }) => (
-    <main id='Content'>{children}</main>
+    <Layout name='Content'>{children}</Layout>
   )
-
-export const Content: React.SFC = Layout

@@ -1,0 +1,50 @@
+#Layout.Room {
+  display: grid;
+  grid-template-columns: 4rem 1px 1fr;
+
+  height: 6rem;
+
+  border-bottom: 1px solid $color-border;
+
+  > #Divider {
+    margin: 0.5rem 0;
+
+    background-color: $color-border;
+  }
+
+  > #Direction {
+    display: flex;
+    align-items: center;
+
+    &.Left {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &.Right > #Layout.Link > a {
+      > #Heading {
+        font-weight: 700;
+      }
+
+      > #Heading, > #Mode {
+        margin-bottom: 0.25rem;
+      }
+    }
+
+    > #Layout.Link {
+      width: 100%;
+      height: 100%;
+
+      > a {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        width: 100%;
+        height: 100%;
+
+        padding: 1rem;
+      }
+    }
+  }
+}

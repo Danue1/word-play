@@ -1,0 +1,34 @@
+@import '../Style/variable';
+
+#Root {
+  display: flex;
+
+  height: 100%;
+
+  border-top: 2px solid hsl(324, 60%, 60%);
+
+  > #Layout.Content {
+    flex: 1;
+    display: flex;
+  }
+
+  > #Side {
+    display: flex;
+    flex-direction: column;
+  
+    width: $width-sidebar;
+    height: 100%;
+
+    background-color: $color-background;
+
+    overflow-y: scroll;
+
+    > #Layout.Link {
+      a {
+        width: 100%;
+  
+        padding: 0.5rem;
+      }
+    }
+  }
+}

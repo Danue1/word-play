@@ -1,0 +1,39 @@
+@import '../../../Style/Variable';
+
+#Layout.ChatList {
+  display: grid;
+  grid-template-rows: 13rem 2rem;
+  grid-gap: 0.5rem;
+
+  border-left: 1px solid $color-border;
+
+  > #Layout.Lines {
+    display: grid;
+    grid-gap: 0.5rem;
+
+    overflow-y: scroll;
+
+    @import 'Line';
+  }
+
+  > #Layout.Input {
+    display: grid;
+    grid-template-columns: 1fr 4rem;
+
+    margin: 0 0.5rem;
+
+    border: 1px solid $color-border {
+      radius: 2px;
+    }
+
+    #Input {
+      width: 100%;
+
+      padding: 0.25rem 0.5rem;
+    }
+
+    #Submit {
+      border-left: 1px solid $color-border;
+    }
+  }
+}

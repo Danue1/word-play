@@ -1,0 +1,27 @@
+@import '../../Style/Variable';
+
+$size-character: 16rem;
+
+#Layout.Home {
+  width: 100%;
+
+  > #Layout.RoomList {
+    height: calc(100% - 16rem);
+
+    border-bottom: 1px solid $color-border;
+  }
+
+  > #Layout.SubContent {
+    display: grid;
+    grid-template-columns: $size-character 1fr;
+    grid-gap: 0.5rem;
+
+    height: $size-character;
+
+    > #Layout.Character {
+    }
+
+    > #Layout.Chat {
+    }
+  }
+}

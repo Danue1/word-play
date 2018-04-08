@@ -1,0 +1,26 @@
+#Layout.Line {
+  display: grid;
+  grid-template-columns: 8rem 1fr 4rem;
+  grid-gap: 0.5rem;
+
+  > #Nickname {
+    padding-left: 0.5rem;
+
+    font-weight: 700;
+
+    text-align: right;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    overflow: hidden;
+  }
+
+  > #Text {
+
+  }
+
+  > #Datetime {
+    color: hsl(0, 0%, 64%);
+  }
+}

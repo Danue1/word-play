@@ -2,15 +2,11 @@ import * as React from 'react'
 import { Link as _Link, LinkProps } from 'react-router-dom'
 
 import './index.scss'
-
-const Layout: React.SFC =
-  ({ children }) => (
-    <div id='Link'>{children}</div>
-  )
+import { Layout } from '@/App/Base'
 
 export const Link: React.SFC<LinkProps> =
-  ({ children, to }) => (
-    <Layout>
-      <_Link to={to}>{children}</_Link>
+  ({ children, to, className }) => (
+    <Layout name='Link'>
+      <_Link to={to} className={className}>{children}</_Link>
     </Layout>
   )
