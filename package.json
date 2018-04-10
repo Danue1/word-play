@@ -1,63 +1,26 @@
 {
   "name": "word-play",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "dev": "npm run start",
-    "start": "node scripts/start",
-    "build": "node scripts/build"
+    "server": "cd server && npm run start",
+    "server:dev": "cd server && npm run dev",
+    "client": "cd client && npm run start",
+    "client:dev": "cd client && npm run dev"
   },
-  "devDependencies": {
-    "@types/classnames": "^2.2.3",
-    "@types/immutable": "^3.8.7",
-    "@types/node": "^9.4.6",
-    "@types/react": "^16.0.38",
-    "@types/react-addons-css-transition-group": "^15.0.4",
-    "@types/react-dom": "^16.0.4",
-    "@types/react-redux": "^5.0.15",
-    "@types/react-router-dom": "^4.2.4",
-    "@types/react-transition-group": "^2.0.7"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OnLiU211/word-play.git"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OnLiU211/word-play/issues"
+  },
+  "homepage": "https://github.com/OnLiU211/word-play#readme",
   "dependencies": {
-    "autoprefixer": "^8.0.0",
-    "axios": "^0.17.1",
-    "case-sensitive-paths-webpack-plugin": "^2.1.1",
-    "chalk": "^2.3.1",
-    "classnames": "^2.2.5",
-    "css-loader": "^0.28.9",
-    "dotenv": "^5.0.0",
-    "extract-text-webpack-plugin": "^3.0.2",
-    "file-loader": "^1.1.6",
-    "fs-extra": "^5.0.0",
-    "html-webpack-plugin": "^2.30.1",
-    "immutable": "^3.8.2",
-    "material-ui": "^0.20.0",
-    "node-sass": "^4.7.2",
-    "object-assign": "^4.1.1",
-    "postcss-flexbugs-fixes": "^3.3.0",
-    "postcss-loader": "^2.1.0",
-    "promise": "^8.0.1",
-    "raw-loader": "^0.5.1",
-    "react": "^16.2.0",
-    "react-dev-utils": "^5.0.0",
-    "react-dom": "^16.2.0",
-    "react-redux": "^5.0.7",
-    "react-router-dom": "^4.2.2",
-    "react-svg-inline": "^2.1.0",
-    "react-transition-group": "^2.2.1",
-    "sass-loader": "^6.0.6",
-    "source-map-loader": "^0.2.3",
-    "style-loader": "^0.20.2",
-    "sw-precache-webpack-plugin": "^0.11.4",
-    "ts-loader": "^3.5.0",
-    "tslint": "^5.9.1",
-    "tslint-config-standard": "^7.0.0",
-    "tslint-loader": "^3.5.3",
-    "tslint-react": "^3.5.1",
-    "typescript": "^2.7.2",
-    "url-loader": "^0.5.9",
-    "webpack": "^3.11.0",
-    "webpack-dev-server": "^2.11.1",
-    "webpack-manifest-plugin": "^1.3.2",
-    "whatwg-fetch": "^2.0.3"
+    "@types/socket.io-client": "^1.4.32"
   }
 }
