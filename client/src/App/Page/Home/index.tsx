@@ -7,18 +7,36 @@ import { Character } from './Character'
 import { ChatList } from './ChatList'
 import { RoomList } from './RoomList'
 
-const endPoint = 'http://localhost:3003'
-const socket = SocketIOClient(endPoint)
-socket.emit('hello', { message: 'hi' })
-socket.on('hello', ({ message }) => console.log(message))
-// socket.disconnect()
+export class Home extends React.Component {
+  private readonly socket = this.initialiseSocket()
 
-export const Home: React.SFC = () => (
-  <Layout name='Home'>
-    <RoomList />
-    <Layout name='SubContent'>
-      <Character />
-      <ChatList />
-    </Layout>
-  </Layout>
-)
+  public render (): JSX.Element {
+    return (
+      <Layout name='Home'>
+        <RoomList />
+        <Layout name='SubContent'>
+          <Character onClick={this.onClick()} />
+          <ChatList />
+        </Layout>
+      </Layout>
+    )
+  }
+
+  private initialiseSocket () {
+    const endPoint = 'http://localhost:3030'
+    const socket = SocketIOClient(endPoint)
+
+    socket.on('hello', ({ message }) => console.log(message))
+
+    return socket
+  }
+
+  private onClick () {
+    return (): void => {
+      const eventName = 'hello'
+      const payload = { message: 'index' }
+
+      this.socket.emit(eventName, payload)
+    }
+  }
+}

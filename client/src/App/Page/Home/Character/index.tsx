@@ -3,8 +3,14 @@ import * as React from 'react'
 import './index.scss'
 import { Layout } from '../../../Base'
 
-export const Character: React.SFC = () => (
+interface IProps {
+  onClick ()
+}
+
+export const Character: React.SFC<IProps> = ({ onClick }) => (
   <Layout name='Character'>
-    캐릭터
+    <div onClick={onClick}>
+      캐릭터
+    </div>
   </Layout>
 )

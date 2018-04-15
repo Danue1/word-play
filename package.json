@@ -1,8 +1,6 @@
 {
   "name": "word-play",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.0.0",
   "scripts": {
     "server": "cd server && npm run start",
     "server:dev": "cd server && npm run dev",
@@ -19,8 +17,5 @@
   "bugs": {
     "url": "https://github.com/OnLiU211/word-play/issues"
   },
-  "homepage": "https://github.com/OnLiU211/word-play#readme",
-  "dependencies": {
-    "@types/socket.io-client": "^1.4.32"
-  }
+  "homepage": "https://github.com/OnLiU211/word-play#readme"
 }

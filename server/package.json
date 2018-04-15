@@ -4,14 +4,17 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "build": "tsc",
-    "dev": "tsc --watch",
-    "watch": "forever -w build"
+    "start": "tsc && node build/index.prod",
+    "dev": "tsc && forever start -w build/index.dev.js --watchDirectory build && tsc -w",
+    "log": "forever logs",
+    "list": "forever list"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/cors": "^2.8.3",
+    "@types/dotenv": "^4.0.3",
     "@types/express": "^4.11.1",
     "@types/socket.io": "^1.4.33",
     "body-parser": "^1.18.2",
