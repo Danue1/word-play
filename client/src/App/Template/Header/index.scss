@@ -1,0 +1,27 @@
+@import '../../Style/variable';
+
+#Layout.Header {
+  display: flex;
+
+  border-radius: 0.25rem;
+
+  #Layout.Link {
+    a {
+      padding: 1rem;
+
+      border-radius: 0.25rem;
+
+      font-weight: 700;
+
+      transition: box-shadow 0.3s ease-in-out;
+
+      &:hover {
+        box-shadow: 0 0.25rem 1rem 0 rgba(128, 128, 128, 0.36);
+      }
+    }
+
+    &.Rank {
+      flex: 1;
+    }
+  }
+}

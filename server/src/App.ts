@@ -55,6 +55,7 @@ export class App {
       console.log(process.env.NODE_ENV)
 
       socket.on('hello', ({ message }): void => {
+        console.log('hello')
         socket.emit('hello', { message })
       })
       socket.on('disconnect', (): void => console.log('disconnect'))

@@ -1,3 +1,16 @@
 @import 'Variable';
 @import 'clearfix';
 @import 'Color';
+
+html {
+  background: {
+    color: $color-background;
+    image: url('../../asset/background/image.jpg');
+    repeat: no-repeat;
+    size: cover;
+  }
+}
+
+body {
+  padding: 2rem 0;
+}

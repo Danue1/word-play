@@ -4,13 +4,11 @@ import './index.scss'
 import { Layout } from '../../../Base'
 
 interface IProps {
-  onClick ()
+  onClick? ()
 }
 
 export const Character: React.SFC<IProps> = ({ onClick }) => (
-  <Layout name='Character'>
-    <div onClick={onClick}>
-      캐릭터
-    </div>
+  <Layout name='Character' onClick={onClick}>
+    캐릭터
   </Layout>
 )

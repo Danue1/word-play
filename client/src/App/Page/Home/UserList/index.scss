@@ -1,0 +1,35 @@
+@import '../../../Style/variable';
+
+#Layout.UserList {
+  display: grid;
+
+  width: 12rem;
+
+  overflow-y: hidden;
+
+  > #Heading {
+    padding: 1rem;
+  }
+
+  > #Layout.Users {
+    overflow-y: scroll;
+
+    > #Layout.Link {
+      width: 100%;
+
+      a {
+        width: 100%;
+
+        padding: 0.5rem 1rem;
+
+        border-radius: 0.25rem;
+
+        transition: background-color 0.3s ease-in-out;
+
+        &:hover {
+          background-color: rgba(230, 230, 230, 0.64);
+        }
+      }
+    }
+  }
+}

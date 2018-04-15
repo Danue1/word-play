@@ -2,24 +2,14 @@
 
 #Layout.RoomList {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 0.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
 
   width: 100%;
 
+  padding-right: 1rem;
+
   overflow-y: scroll;
-  
-  @media (max-width: 96rem) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  
-  @media (max-width: 84rem) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  @media (max-width: 72rem) {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  
+
   @import 'Room';
 }

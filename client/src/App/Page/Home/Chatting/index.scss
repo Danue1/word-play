@@ -1,11 +1,10 @@
 @import '../../../Style/Variable';
 
-#Layout.ChatList {
+#Layout.Chatting {
   display: grid;
-  grid-template-rows: 13rem 2rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2rem;
   grid-gap: 0.5rem;
-
-  border-left: 1px solid $color-border;
 
   > #Layout.Lines {
     display: grid;
@@ -19,8 +18,7 @@
   > #Layout.Input {
     display: grid;
     grid-template-columns: 1fr 4rem;
-
-    margin: 0 0.5rem;
+    grid-template-rows: 1fr;
 
     border: 1px solid $color-border {
       radius: 2px;

@@ -6,9 +6,17 @@ import './index.scss'
 interface IProps {
   readonly name: string
   readonly className?: string
+
+  onClick? ()
 }
 
 export const Layout: React.SFC<IProps> =
-  ({ children, name, className }) => (
-    <div id='Layout' className={classNames(name, className)}>{children}</div>
+  ({ children, name, className, onClick }) => (
+    <div
+      id='Layout'
+      className={classNames(name, className)}
+      onClick={onClick}
+    >
+      {children}
+    </div>
   )

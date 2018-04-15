@@ -1,11 +1,12 @@
 #Layout.Line {
   display: grid;
   grid-template-columns: 8rem 1fr 4rem;
-  grid-gap: 0.5rem;
+  grid-template-rows: 1fr;
+  grid-gap: 1rem;
+
+  padding-right: 1rem;
 
   > #Nickname {
-    padding-left: 0.5rem;
-
     font-weight: 700;
 
     text-align: right;
@@ -14,10 +15,6 @@
     white-space: nowrap;
     word-wrap: normal;
     overflow: hidden;
-  }
-
-  > #Text {
-
   }
 
   > #Datetime {

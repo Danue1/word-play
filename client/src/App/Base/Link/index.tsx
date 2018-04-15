@@ -6,7 +6,7 @@ import { Layout } from '@/App/Base'
 
 export const Link: React.SFC<LinkProps> =
   ({ children, to, className }) => (
-    <Layout name='Link'>
+    <Layout name='Link' className={className}>
       <_Link to={to} className={className}>{children}</_Link>
     </Layout>
   )
